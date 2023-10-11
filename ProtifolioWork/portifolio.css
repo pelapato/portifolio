@@ -9,7 +9,7 @@ body {
 .cima-portifolio{
     display:flex;
     visibility:visible;
-    background:#e7e7e7;
+    background:black;
    width:100%;
    height:65px;
    align-items:center;
@@ -26,11 +26,11 @@ ul{
 a{
     display:flex;
     padding:5px;
-    color:black;
+    color:white;
 }
 a:hover{
     background:#e7e7e7;
-    color:white;
+    color:#3fe289;
     border-radius:10px;
     transition:.5s;
 }
@@ -81,7 +81,7 @@ img:hover:nth-child(n){
 }
 .um,.dois,.tres,.for{
     background:#e7e7e7;
-    color: Black;
+    color:Black;
     width:300px;
     height:190px;
     border-radius:20px;
@@ -145,7 +145,7 @@ footer{
     color:black;
     z-index:10000;
 }
-@media(max-width:600px){
+@media(max-width:900px){
     .cima-portifolio{
         visibility:visible;
     }
@@ -153,7 +153,7 @@ footer{
         position:absolute;
         text-align:center;
         display:block;
-        background:#e7e7e7;
+        background:black;
         width:0;
         position:absolute;
         top:64px;
@@ -173,7 +173,7 @@ footer{
         display:block;
         color:black;
         overflow-x:auto;
-        color:black;
+        color:white;
         visibility:visible;
     }
     a{
@@ -181,20 +181,21 @@ footer{
         position:relative;
         top:60px;
         right:0px;
-        padding:50px;
+        padding:50% 0% 50% 0%;
         z-index:10000;
         overflow-x:hidden;
-        color:black;
+        color:white;
+        text-decoration:none;
     }
     #n.ativo a:hover{
-        background:black;
+        background:#3fe289;
         color:white;
     }
     span{
         display:block;
         width:20px;
         height:0px;
-        border:solid 1px black;
+        border:solid 1px white;
         margin-left:10px;
     }
     span:after,span:before{
@@ -203,7 +204,7 @@ footer{
         display:block;
         content:"";
         width:20px;
-        border:solid 1px black;
+        border:solid 1px white;
         margin:5px;
     }
     #n.ativo span:after{
