@@ -1,0 +1,233 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body {
+    width:100%;
+    height:100vh;
+}
+.cima-portifolio{
+    display:flex;
+    visibility:visible;
+    background:#e7e7e7;
+   width:100%;
+   height:65px;
+   align-items:center;
+   position:fixed;
+   top:0;
+   justify-content:space-between;
+   z-index:10000;
+}
+ul{
+    display:flex;
+    gap:0.5rem;
+    list-style:none;
+}
+a{
+    display:flex;
+    padding:5px;
+    color:black;
+}
+a:hover{
+    background:#e7e7e7;
+    color:white;
+    border-radius:10px;
+    transition:.5s;
+}
+#logo{
+    width:50px;
+    border-radius:50%;
+}
+form{
+    position:absolute;
+    left:100px;
+    top:20px;
+}
+/*Corpo*/
+article{
+    margin:20px;
+    background:#e7e7e7;
+    border-radius:10px;
+}
+.Front-Dev{
+    margin-top:60px;
+}
+#pefil{
+    background:transparent;
+    width:120px;
+    border-radius:50%;
+}
+#html,#css,#js{
+    max-width:100px;
+}
+.experiencias{
+    color:white;
+    font-size:1.2rem;
+    max-width:800px;
+    text-align:center;
+}
+img:hover:nth-child(n){
+    background:dimgrey;
+    border-radius:50%;
+    transition:1s;
+}
+#pefil,.texto{
+    margin:20px;
+}
+.grupo{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+}
+.um,.dois,.tres,.for{
+    background:#e7e7e7;
+    color: Black;
+    width:300px;
+    height:190px;
+    border-radius:20px;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.2rem;
+    border:solid #3fe289 .2px;
+}
+button{
+    padding:14px;
+    background:orange;
+    border:none;
+    border-radius:10px;
+    margin:15px;
+    color:white;
+}
+button:hover{
+    color:white;
+    background:black;
+    transition:.6s;
+}
+.projeto-p{
+    margin:20px;
+}
+.jornada-img{
+    width:150px;
+}
+.trila{
+    text-align:justify;
+    font-size:0.9rem;
+    margin:20px;
+}
+.contato{
+    text-align:center;
+}
+.contato >p{
+    margin:20px;
+}
+.rede{
+    width:30px;
+    margin-right:20px;
+}
+.contato-rede{
+    padding-bottom:30px;
+}
+footer{
+    position:fixed;
+    width:100%;
+    background:#e7e7e7;
+    padding:10px;
+    font-size:.8rem;
+    text-align: center ;
+    bottom:0;
+}
+#btn-mobile{
+    position:absolute;
+    top:0;
+    right:0;
+    display:flex;
+    background:none;
+    color:black;
+    z-index:10000;
+}
+@media(max-width:600px){
+    .cima-portifolio{
+        visibility:visible;
+    }
+    ul{
+        position:absolute;
+        text-align:center;
+        display:block;
+        background:#e7e7e7;
+        width:0;
+        position:absolute;
+        top:64px;
+        right:0;
+        height:100vh;
+        transition:1s;
+    }
+    #n.ativo ul{
+        width:200px;
+        position:absolute;
+        top:64px;
+        right:0;
+        height:100vh;
+        transition:1s;
+    }
+    #n.ativo a{
+        display:block;
+        color:black;
+        overflow-x:auto;
+        color:black;
+        visibility:visible;
+    }
+    a{
+       visibility:hidden;
+        position:relative;
+        top:60px;
+        right:0px;
+        padding:50px;
+        z-index:10000;
+        overflow-x:hidden;
+        color:black;
+    }
+    #n.ativo a:hover{
+        background:black;
+        color:white;
+    }
+    span{
+        display:block;
+        width:20px;
+        height:0px;
+        border:solid 1px black;
+        margin-left:10px;
+    }
+    span:after,span:before{
+        position:relative;
+        right:5px;
+        display:block;
+        content:"";
+        width:20px;
+        border:solid 1px black;
+        margin:5px;
+    }
+    #n.ativo span:after{
+        transform:rotate(45deg);
+        position:relative;
+        top:-9.5px;
+        transition:0.6s;
+    }
+    #n.ativo span:before{
+        transform:rotate(-43deg);
+        position:relative;
+        top:-2px;
+        transition:.6s;
+    }
+    #n.ativo span{
+        border:solid white 0px;
+    }
+    #eve1{
+    visibility:visible;
+    position:relative;
+    color:white;
+    margin:0;
+    padding:0;
+    top:-0px;
+    text-decoration:none;
+    }
+}
