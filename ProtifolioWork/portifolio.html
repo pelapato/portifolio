@@ -9,88 +9,46 @@
   <link rel="stylesheet" href="portifolio.css">
 </head>
 
-<body id="b">
-  <header class="cima-portifolio" id="cima-portifolio">
-      <img id="logo" src="imagens/logotipo.png"/>
-      <nav id="n">
-          <ul>
-              <li><a class="1"href="#mim">Sobre M.</a></li>
-              <li><a href="#exp">Experiencias</a></li>
-              <li><a  class="1"href="#project">Projetos</a></li>
-          </ul>
-                    <button id="btn-mobile" onclick="efeito()">Menu<span class="linha"></span></button>
-      </nav>
+<body>
+  <header>
+    <h3>Work</h3>
+    <nav id="navgation">
+      <ul id="navgation-link">
+        <li><a class="link" href="#">Login</a></li>
+        <li><a class="link" href="portifolio.html">Registre-se</a></li>
+        <li><a class="link" href="#">Sobre</a></li>
+        <li><a class="link" href="#">Contato</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
-      <article class="Front-Dev">
-          <h1>Em andamento...</h1>
-          <h6>Atilon_Dev</h6>
-          <section class="info-Dev" id="mim">
-              <img id="pefil" src="imagens/pefil.png" alt="pefil"/>
-              <h1 class="texto">Sobre Mim@atilon</h1>
-              <p class="texto">Faço PROGRAMAÇÃO ja faz 1 ano e tenho uma paixão por Front-End comecei com meus 13 anos e ate hoje tenho um grande sonho de ser Programador contratado  </p>
-          </section>
-      </article>
-      <article class="experiencias">
-          <section id="exp">
-              <h1>Experiencias</h1>
-              <img id="js" src="imagens/java-script.png"/>
-              <img id="html" src="imagens/html.png"/>
-              <img id="css" src="imagens/css.png"/>
-          </section>
-      </article>
-      <article class="projetos" id="project">
-          <section>
-              <article class="grupo">
-                  <section class="um">
-                      <h1>Web Profissional</h1>
-                      <p class="projeto-p">Trabalho feito apartir das Experiencias que tive no css</p>
-                      <button>Especionar</button>
-                  </section>
-                  <section class="dois">
-                      <h1>caulculadora</h1>
-                      <p class="projeto-p">Uma calculadora simpels que faz operaçoes basicas</p>
-                      <button>Especionar</button>
-                  </section>
-                  <section class="tres">
-                      <h1>Jogo</h1>
-                      <p class="projeto-p">Jogo no Back-end usando Math.random()</p>
-                      <button>Especionar</button>
-                  </section>
-                  <section class="for">
-                      <h1>projeto luz(on,off)</h1>
-                      <p class="projeto-p">Usando mais css e java script</p>
-                      <button><a href="Projeto-on-off/Luz.html" id="eve1">Especinar</a></button>
-                  </section>
-              </article>
-          </section>
-      </article>
-      <article class="jornada">
-          <img class="jornada-img" src="imagens/jorn.png"/>
-          <section class="trila">
-              <h1>Primeira jornada</h1>
-              <p>A o encontra a tecnologia pude peceber que era a unica coisa que eu realmente gostava e sabia codar.apartir de 1mes realmente tive certeza que programação era pra mim.
-              </p>
-          </section>
-          <section class="trila">
-              <h1>Segunda Jornada</h1>
-              <p>Ja facinado por programar tanto no Front-endquanto no Back-end partir a criar projetos com os meus conhecimentos a fim de melhorar meus conhecimentos e assim construir mini aplicações.</p>
-          </section>
-          <section class="trila">
-              <h1>Trilha do Fim</h1>
-              <p>Ja praticado e estudado sobre csss e html e java script e java foi ai que o portifolio veio a ser criado pondo todas as ideias antigas em praticas,como a criação de projetos e botando a experiências em pratica pela milessima ves e nao a ultima vez.</p>
-          </section>
-      </article>
+    <section id="bloco1">
+      <div id="subBloco">
+        <div id="subBloco-dentro">
+          <h1 class="bloco-conteudo">Welcome</h1>
+          <h3 class="bloco-conteudo">I Work in Front-end.</h3>
+          <h4 class="bloco-conteudo">criador:Atilon_P_S</h4>
+        </div>
+      </div>
+    </section>
+    <section id="bloco2">
+    <div id="subBloco2">
+      <h2>Registre-se</h2>
+      <div id="subBloco-dentro2">
+        <label for="usuario">User</label>
+        <input type="text" id="usuario"/>
+        <label for="telefone">Tel</label>
+        <input type="number" id="telefone"/>
+        <label for="codigo">Codigo</label>
+        <input type="number" id="Codigo"/>
+        <label for="data">Aniversario</label>
+        <input type="date" id="data"/>
+        <button>Entrar</button>
+        <button>Cancelar</button>
+      </div>
+    </div>
+    </section>
   </main>
-  <article class="contato-rede">
-            <section class="contato">
-          <p><img class="rede" src="imagens/Rede-Social/face.png"/>Atilon_Dev.offcial</p>
-          <p><img class="rede" src="imagens/Rede-Social/youtube.png"/>Code/cursos</p>
-          <p><img class="rede" src="imagens/Rede-Social/twitter.png"/>Front-end Atilo_Dev</p>
-          <p><img class="rede" src="imagens/Rede-Social/instar.png"/>Atilon_Dev.official</p>
-      </section>
-  </article>
-  <footer>Produzido por instar:AtiloDev projeto Front-end</footer>
-  <script src="webMobile.js"></script>
+  <script src="Mobile.js"></script>
 </body>
 </html>

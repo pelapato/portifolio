@@ -5,230 +5,127 @@
 body {
     width:100%;
     height:100vh;
-}
-.cima-portifolio{
-    display:flex;
-    visibility:visible;
-    background:black;
-   width:100%;
-   height:65px;
-   align-items:center;
-   position:fixed;
-   top:0;
-   justify-content:space-between;
-   z-index:10000;
-}
-ul{
-    display:flex;
-    gap:0.5rem;
-    list-style:none;
-}
-a{
-    display:flex;
-    padding:5px;
-    color:white;
-}
-a:hover{
     background:#e7e7e7;
-    color:#3fe289;
-    border-radius:10px;
-    transition:.5s;
 }
-#logo{
-    width:50px;
-    border-radius:50%;
+/*navgation*/
+header{
+  display:flex;
+  background:#e7e7e7;
+  height:50px;
+  align-items:center;
+  justify-content:space-between;
 }
-form{
-    position:absolute;
-    left:100px;
-    top:20px;
+#navgation{
+  display:flex;
 }
-/*Corpo*/
-article{
-    margin:20px;
-    background:#e7e7e7;
-    border-radius:10px;
+#navgation-link{
+  display:flex;
+  list-style:none;
+  gap:10px;
 }
-.Front-Dev{
-    margin-top:60px;
+.link{
+  padding:10px;
+  text-decoration:none;
+  color:black;
 }
-#pefil{
-    background:transparent;
-    width:120px;
-    border-radius:50%;
+.link:hover{
+  color:orange;
 }
-#html,#css,#js{
-    max-width:100px;
+/*login*/
+#bloco1{
+  margin:auto;
+  display:flex;
+  width:90%;
+  background:black;
+  height:50vh;
+  align-items:center;
+  justify-content:center;
 }
-.experiencias{
-    color:white;
-    font-size:1.2rem;
-    max-width:800px;
-    text-align:center;
+#subBloco{
+  width:100%;
 }
-img:hover:nth-child(n){
-    background:dimgrey;
-    border-radius:50%;
-    transition:1s;
+#subBloco-dentro{
+  margin:auto;
+  text-align:center;
+  padding:20px;
+  background:;
+  font-size:2rem;
+  box-shadow:black .2px .5px .3px;
+  color:white;
 }
-#pefil,.texto{
-    margin:20px;
+.bloco-conteudo{
+  margin:30px;
 }
-.grupo{
-    display:flex;
-    gap:1rem;
-    flex-wrap:wrap;
+#bloco2{
+  margin:auto;
+  padding:30px;
+  display:flex;
+  width:90%;
+  background:white;
+  text-align:center;
+  height:60vh;
+  align-items:center;
+  justify-content:center;
 }
-.um,.dois,.tres,.for{
-    background:#e7e7e7;
-    color:Black;
-    width:300px;
-    height:190px;
-    border-radius:20px;
-    text-align:center;
-    font-weight:bold;
-    font-size:1.2rem;
-    border:solid #3fe289 .2px;
+#subBloco2{
+  display:block;
+  font-size:1rem;
+}
+#subBloco-dentro2{
+  margin:auto;
+}
+/*FORMULARIO CONTA*/
+input,button{
+  display:block;
+  padding:10px;
+  color:black;
+  margin:15px;
+  outline:none;
+}
+input{
+  border:none;
+  border-bottom:solid 2px black;
 }
 button{
-    padding:14px;
-    background:orange;
-    border:none;
-    border-radius:10px;
-    margin:15px;
-    color:white;
+  width:100px;
 }
 button:hover{
-    color:white;
-    background:black;
-    transition:.6s;
+  background:black;
+  color:white;
+  transition:.6s;
 }
-.projeto-p{
-    margin:20px;
+input:hover{
+  border-bottom:solid red 2px;
+  transition:.5s;
 }
-.jornada-img{
-    width:150px;
+label{
+  margin:10px;
 }
-.trila{
-    text-align:justify;
-    font-size:0.9rem;
-    margin:20px;
+/*responsive*/
+@media(min-width:900px){
+ #bloco1{
+  display:flex;
+  width:50%;
+  background:black;
+  height:100vh;
 }
-.contato{
-    text-align:center;
+#bloco2{
+  position:relative;
+  left:50%;
+  top:-895px;
+  display:flex;
+  width:50%;
+  background:white;
+  text-align:center;
+  height:93vh;
 }
-.contato >p{
-    margin:20px;
+#bloco1 ,#bloco2{
+  margin:0px;
+  position:relative;
+  display:flex;
 }
-.rede{
-    width:30px;
-    margin-right:20px;
+#subBloco2 {
+  display: block;
+  font-size:1.5rem;
 }
-.contato-rede{
-    padding-bottom:30px;
-}
-footer{
-    position:fixed;
-    width:100%;
-    background:#e7e7e7;
-    padding:10px;
-    font-size:.8rem;
-    text-align: center ;
-    bottom:0;
-}
-#btn-mobile{
-    position:absolute;
-    top:0;
-    right:0;
-    display:flex;
-    background:none;
-    color:black;
-    z-index:10000;
-}
-@media(max-width:900px){
-    .cima-portifolio{
-        visibility:visible;
-    }
-    ul{
-        position:absolute;
-        text-align:center;
-        display:block;
-        background:black;
-        width:0;
-        position:absolute;
-        top:64px;
-        right:0;
-        height:100vh;
-        transition:1s;
-    }
-    #n.ativo ul{
-        width:200px;
-        position:absolute;
-        top:64px;
-        right:0;
-        height:100vh;
-        transition:1s;
-    }
-    #n.ativo a{
-        display:block;
-        color:black;
-        overflow-x:auto;
-        color:white;
-        visibility:visible;
-    }
-    a{
-       visibility:hidden;
-        position:relative;
-        top:60px;
-        right:0px;
-        padding:50% 0% 50% 0%;
-        z-index:10000;
-        overflow-x:hidden;
-        color:white;
-        text-decoration:none;
-    }
-    #n.ativo a:hover{
-        background:#3fe289;
-        color:white;
-    }
-    span{
-        display:block;
-        width:20px;
-        height:0px;
-        border:solid 1px white;
-        margin-left:10px;
-    }
-    span:after,span:before{
-        position:relative;
-        right:5px;
-        display:block;
-        content:"";
-        width:20px;
-        border:solid 1px white;
-        margin:5px;
-    }
-    #n.ativo span:after{
-        transform:rotate(45deg);
-        position:relative;
-        top:-9.5px;
-        transition:0.6s;
-    }
-    #n.ativo span:before{
-        transform:rotate(-43deg);
-        position:relative;
-        top:-2px;
-        transition:.6s;
-    }
-    #n.ativo span{
-        border:solid white 0px;
-    }
-    #eve1{
-    visibility:visible;
-    position:relative;
-    color:white;
-    margin:0;
-    padding:0;
-    top:-0px;
-    text-decoration:none;
-    }
 }
