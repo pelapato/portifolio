@@ -83,7 +83,6 @@ p{
 }
 /*carregamento web*/
 #loading{
-  opacity:0;
   position:fixed;
   top:0;
   display:flex;
@@ -137,7 +136,7 @@ p{
   /*caixa de dialogo*/
 }
 .dialogo{
-  animation:msg .6s ease-in-out 1;
+  animation:msg .6s ease-in-out 1 ;
   position:fixed;
   display:block;
   width:300px;
