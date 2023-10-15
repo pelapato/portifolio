@@ -83,6 +83,7 @@ p{
 }
 /*carregamento web*/
 #loading{
+  opacity:0;
   position:fixed;
   top:0;
   display:flex;
@@ -101,6 +102,12 @@ p{
   content:" ";
   background:blue;
   border-radius:50%;
+}
+.to-do-List{
+  opacity:0;
+  transition:.3s;
+  width:0;
+  height:0;
 }
 #load1{
   animation:load 2s infinite ease-in-out reverse;
@@ -126,5 +133,40 @@ p{
     top:-20%;
     opacity:0.6;
     background:#3fe289;
+  }
+  /*caixa de dialogo*/
+}
+.dialogo{
+  animation:msg .6s ease-in-out 1;
+  position:fixed;
+  display:block;
+  width:300px;
+  padding:0px 20px 20px 20px;
+  background:#1F00A9;
+  text-align:center;
+  top:50%;
+  left:25%;
+  color:white;
+  border-radius:4rem 0px 4rem 0rem;
+}
+.x{
+  display:block;
+  text-align:right;
+  font-size:1.4rem;
+  color:red;
+  padding:5px;
+}
+.x:hover{
+  color:white;
+}
+@keyframes msg{
+  0%{
+    opacity:0;
+  }
+  50%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
   }
 }
