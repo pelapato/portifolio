@@ -14,6 +14,10 @@
   font-family:BEBAS;
   src: url(fonts/BebasNeue-Regular.ttf)
 }
+@font-face {
+  font-family:NOVA;
+  src: url(fonts/Designer.otf)
+}
 :root{
   --color-blue:#012030;
   --color-white:#e7e7e7;
@@ -23,75 +27,104 @@
   padding:0px;
 }
 body,html{
-  background:var(--color-white);
   width:100%;
-  height:100%;
+  height:100vh;
 }
-/*Tags basicas*/
-#logo{
-  color:rebeccapurple;
-}
-p{
-  font-family:ANDROID;
-}
-a{
-  font-family:BEBAS;
-  text-decoration:none;
-  color:black;
-  padding:15px;
-}
-a:hover{
-  background:rebeccapurple;
-  color:white;
-}
-/*Pagina visual*/
 header{
-  display:flex;
-  width:100%;
-  height:50px;
-  align-items:center;
-  justify-content:space-between;
+  margin-left:20px;
+}
+header >  h4{
+  margin-top:40px;
+}
+.elemento-header{
+  font-family:BEBAS;
+  display:block;
+  text-align:center;
+  margin:50px 0px 20px 20px;
 }
 ul{
   display:flex;
   list-style:none;
+  gap:10px;
+  margin:20px;
+}
+.link{
+  text-decoration:none;
+  color:black;
+}
+.btn{
+  padding:20px;
+  background:#0E235F;
+  border:solid black 2px;
+  color:white;
+  margin:20px;
+}
+/*Main*/
+main{
+  margin-top:30px;
+  background:#0B1152;
+  padding:20px;
+  color:white;
+}
+.Artigo{
+  margin:10px;
+}
+.Artigo > h2{
+  padding:10px;
+  font-size:2rem;
+  font-family:BEBAS;
+}
+.Artigo > h4,h3{
+  margin:70px;
+}
+p{
+  font-family:CELL;
+  font-size:1.2rem;
+}
+/*carregamento web*/
+#loading{
+  position:fixed;
+  top:0;
+  display:flex;
+  justify-content:center;
+  place-items:center;
+  width:100%;
+  content:" ";
+  height:100vh;
+  background:black;
   gap:20px;
 }
-main{
-  margin:auto;
-  
+.load{
+  display:flex;
+  width:50px;
+  height:50px;
+  content:" ";
+  background:blue;
+  border-radius:50%;
 }
-#eu,#sobre{
-  display:block;
-  width:500px;
-  margin:auto;
+#load1{
+  animation:load 2s infinite ease-in-out reverse;
+  animation-delay:.1s;
+  transition:1s;
 }
-#eu{
-  margin-top:4rem;
-  font-size:3rem;
+#load2{
+  animation:load 2s infinite ease-in-out reverse;
+  animation-delay:.4s;
+  transition:1s;
 }
-#btn{
-  background-image:linear-gradient(
-  45deg,
-  red,
-  purple,
-  pink
-  );
-  border:solid white 2px;
-  border-image:linear-gradient(45deg,
-  pink,
-  red,
-  purple) 1;
-  background-clip:text;
-  -webkit-background-clip:text;
-  color:transparent;
-  padding:15px;
-  margin:20px 20px 20px 0px;
+#load3{
+  animation:load 2s infinite ease-in-out reverse;
+  animation-delay:.6s;
+  transition:1s;
 }
-#sobre{
-  border:solid black 2px;
-  padding:20px;
-  border-radius:20px;
-  margin-top:4rem;
-  font-size:1.4rem;
+@keyframes load{
+  0%{
+    position:relative;
+    top:0%;
+  }
+  100%{
+    top:-20%;
+    opacity:0.6;
+    background:#3fe289;
+  }
 }
