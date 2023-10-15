@@ -1,103 +1,97 @@
 @font-face {
-  font-family:Bebas;
-  src: url(BebasNeue-Regular.ttf);
+  font-family:FINA;
+  src: url(fonts/Lato-Thin.ttf)
+}
+@font-face {
+  font-family:CELL;
+  src: url(fonts/Lato-Black.ttf)
+}
+@font-face {
+  font-family:ANDROID;
+  src: url(fonts/Lato-Bold.ttf)
+}
+@font-face {
+  font-family:BEBAS;
+  src: url(fonts/BebasNeue-Regular.ttf)
+}
+:root{
+  --color-blue:#012030;
+  --color-white:#e7e7e7;
 }
 *{
   margin:0px;
   padding:0px;
 }
-:root{
-  --gradient:linear-gradient(to left,
-  rgb(149 144 252),
-  rgb(67 231 173),
-  rgb(226 212 92)
-  );
-  --fundo:linear-gradient(
-  45deg,
-  black,
-  #221133
-  );
-  --button:linear-gradient(
-  65deg,
-  #221133,
-  black
-  );
-  --btnborda:linear-gradient(
-  rgb(149 144 252),
-  rgb(67 231 173),
-  rgb(226 212 92)
-  );
-}
-body,html {
+body,html{
+  background:var(--color-white);
   width:100%;
-  height:100vh;
+  height:100%;
 }
-body{
-  display:flex;
-  font-family:Bebas;
-  background:var(--fundo);
+/*Tags basicas*/
+#logo{
+  color:rebeccapurple;
 }
-h2,h4{
-  font-size:4rem;
-  background-image:var(--gradient);
-  background-clip:text;
-  -webkit-background-clip:text;
-  color:transparent;
+p{
+  font-family:ANDROID;
 }
+a{
+  font-family:BEBAS;
+  text-decoration:none;
+  color:black;
+  padding:15px;
+}
+a:hover{
+  background:rebeccapurple;
+  color:white;
+}
+/*Pagina visual*/
 header{
   display:flex;
-  position:fixed;
-  top:0;
   width:100%;
-  height:7vh;
-  background:#e7e7e7;
+  height:50px;
   align-items:center;
   justify-content:space-between;
 }
-a {
-  padding: 10px;
-}
-#navgation{
+ul{
   display:flex;
   list-style:none;
+  gap:20px;
 }
-#inicio{
-  display:flex;
+main{
   margin:auto;
-  place-content:center;
-  gap:50px;
+  
 }
-#sobre{
+#eu,#sobre{
   display:block;
-  width:400px;
-  color:white;
-  margin-left:30px;
+  width:500px;
+  margin:auto;
 }
-#sobre::after{
-  display:block;
-  content:"";
-  width:100%;
-  height:2px;
-  border:solid white 2px;
-  border-image:var(--gradient) 1;
+#eu{
+  margin-top:4rem;
+  font-size:3rem;
 }
 #btn{
-  background:var(--button);
-  border-image:var(--btnborda) 1;
-  color:white;
+  background-image:linear-gradient(
+  45deg,
+  red,
+  purple,
+  pink
+  );
+  border:solid white 2px;
+  border-image:linear-gradient(45deg,
+  pink,
+  red,
+  purple) 1;
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
   padding:15px;
+  margin:20px 20px 20px 0px;
 }
-@media(max-width:800px){
-  #inicio{
-    display:grid;
-    grid-gap:30px;
-  }
-  #sobre{
-    display:grid;
-    background:#221133;
-    margin-left:0px;
-    height:300px;
-    padding:10px;
-    border-radius:0 0 1rem 1rem;
-  }
+#sobre{
+  border:solid black 2px;
+  padding:20px;
+  border-radius:20px;
+  margin-top:4rem;
+  font-size:1.4rem;
 }
