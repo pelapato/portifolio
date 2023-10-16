@@ -92,7 +92,6 @@ p{
 #loading{
   position:fixed;
   top:0;
-  opacity:0;
   display:flex;
   justify-content:center;
   place-items:center;
