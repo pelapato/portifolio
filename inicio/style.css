@@ -42,6 +42,9 @@ header{
   justify-content:space-between;
   z-index:100000;
 }
+.full{
+  visibility:hidden;
+}
 #logo{
   font-family:BEBAS;
   font-size:2rem;
@@ -189,7 +192,6 @@ p{
   height:100vh;
   background:black;
   gap:20px;
-  visibility:hidden;
 }
 .load{
   display:flex;

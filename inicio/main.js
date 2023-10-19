@@ -6,25 +6,33 @@ let x=document.getElementById("x")
 
 const logotipo = () => {
   contLogo += 1
+  dialogo.style.opacity="0"
   if (contLogo == 1) {
     setTimeout(() => {
       loading.classList.add("to-do-List")
       console.log("removeu")
     }, 5000)
   }
+  setTimeout(()=>{
+    dialogo.style.opacity="1"
+  },10000)
   x.addEventListener('click', () => {
     dialogo.style.opacity = "0"
   })
 }
 
 //Navegation
+let header=document.querySelector("#projeto-nav")
 let link1=document.querySelector(".link")
 let link2=document.querySelector(".link2")
 let b=document.querySelector(".navegation")
 let ceta=document.querySelector(".ceta")
 let ceta1=document.querySelector(".ceta1")
 let github=document.querySelector(".navegation-github")
-
+header.classList.add("full")
+setTimeout(()=>{
+  header.classList.remove("full")
+},5500)
 link1.addEventListener("click",()=>{
   b.classList.toggle("navgation-visible")
   ceta.classList.toggle("ceta-rotate")
