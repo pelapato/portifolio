@@ -31,48 +31,87 @@ body,html{
   height:100vh;
 }
 header{
-  margin-left:20px;
+  display:flex;
+  width:100%;
+  height:70px;
+  background:black;
+  color:white;
+  align-items:center;
+  justify-content:space-between;
+  z-index:100000;
 }
-header >  h4{
-  margin-top:40px;
-}
-.elemento-header{
+#logo{
   font-family:BEBAS;
-  display:block;
-  text-align:center;
-  margin:50px 0px 20px 20px;
+  font-size:2rem;
+  text-shadow:dimgrey 2px 1px 4px;
+}
+nav{
+  display:flex;
 }
 ul{
   display:flex;
   list-style:none;
   gap:10px;
-  margin:20px;
+  color:white;
 }
 .link{
   font-family:ANDROID;
   text-decoration:none;
-  color:black;
-}
-.btn{
-  padding:20px;
-  background:#0E235F;
-  border:solid black 2px;
   color:white;
-  margin:20px;
+}
+#btn-header{
+  margin-left:30px;
+  padding:10px;
+  background:#1A28C5;
+  border:none;
+  color:white;
+}
+/*click navegation*/
+.navegation{
+  position:absolute;
+  display:none;
+  align-items:center;
+  width:100%;
+  height:60px;
+  top:70px;
+  left:0;
+  gap:30px;
+  background:#1A28C5;
+  color:white;
+  padding:10px;
 }
 /*Main*/
 main{
   margin-top:30px;
   background:#0B1152;
-  padding:20px;
   color:white;
 }
+.elemento-Main {
+  font-family: BEBAS;
+  display: block;
+  text-align: center;
+  margin: 40px;
+}
+.btn {
+  padding: 20px;
+  background: #0E235F;
+  border: solid black 2px;
+  color: white;
+  margin: 20px;
+}
 .Artigo{
-  margin:10px;
+  margin:30px;
+  width:100%;
+}
+.Artigo-principal{
+  padding:20px;
+  background:white;
+  color:black;
 }
 .Artigo-moderamento{
   width:100%;
   height:100%;
+  margin:30px;
   border-top:solid white 2px;
 }
 .Artigo > h2{
