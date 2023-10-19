@@ -61,12 +61,24 @@ ul{
   text-decoration:none;
   color:white;
 }
-#btn-header{
-  margin-left:30px;
+#btn-acess{
+  position:relative;
+  margin-left:160px;
   padding:10px;
   background:#1A28C5;
   border:none;
   color:white;
+}
+.btn-acess-login{
+  color:white;
+  text-decoration:none;
+}
+.btn-acess-login:hover{
+  color:black;
+}
+#btn-acess:hover{
+  background:white;
+  color:black;
 }
 /*click navegation*/
 .navegation{
@@ -233,9 +245,6 @@ p{
   box-shadow:black 2px 1px 4rem;
   color:white;
   border-radius:4rem 0px 4rem 0rem;
-}
-#dialogo-seguir{
-  
 }
 .btn-dialogo{
   padding:15px;
