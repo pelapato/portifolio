@@ -6,7 +6,7 @@ let ceta = document.querySelector(".ceta")
 let ceta1 = document.querySelector(".ceta1")
 let github = document.querySelector(".navegation-github")
 
-link1.addEventListener("click", () => {
+link1.addEventListener("click",()=>{
   b.classList.toggle("navgation-visible")
   ceta.classList.toggle("ceta-rotate")
   github.classList.remove("navegation-visible-github")
